@@ -6,6 +6,7 @@ const detailProductSchema = new mongoose.Schema({
 });
 
 const productSchema = new mongoose.Schema({
+    _id: String,
     productName: String,
     quantity: Number,
     detailProduct: detailProductSchema,
